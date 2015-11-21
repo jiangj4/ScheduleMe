@@ -38,3 +38,8 @@ table, th, td {
 	text-align: center;
 	width: 800px;
 }
+
+.selected {
+	background-color: #00ff33;
+}
+

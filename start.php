@@ -8,9 +8,6 @@
 		$user = $_COOKIE['user'];
 		$id = $_COOKIE['id'];
 		$db = newPDO();
-	//	echo($id);
-	//	echo($user);
-	//	echo(verifyUser($id, $db));
 		if(verifyUser($id, $db))
 			header('Location: home.php');
 		else

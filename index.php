@@ -11,7 +11,7 @@
 			if (isset($_COOKIE['user'])) {
 			?>
 				<div id="logging">
-					<a href="start.php"> <img src="schedule.png" alt="schedule" /> </a>
+					<a href="home.php"> <img src="schedule.png" alt="schedule" /> </a>
 				</div>
 		<?php
 			} else {
