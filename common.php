@@ -10,12 +10,13 @@
 		return $db;
 	}
 
-	function findID($username, $db){
+	function verifyUser($username, $db){
 		$usernamequote = $db->quote($username);
-	
+		echo($usernamequote);
+
 		$query = "SELECT name
 				  FROM Users
-				  WHERE facebookid = $usernamequote
+				  WHERE facebookid = $usernamequote AND university <> NULL
 				  LIMIT 1";
 		$rows = $db->query($query);
 
@@ -25,6 +26,8 @@
 		}
 		return false;
 	}
+
+
 ?>
 <html>
 	<head>
